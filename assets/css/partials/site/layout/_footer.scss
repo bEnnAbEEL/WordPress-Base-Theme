@@ -1,0 +1,177 @@
+footer {
+	background-color: map-get($map: $colors, $key: vdblue);
+	padding: 11.7rem 0 7rem 0;
+}
+
+.footer-cta {
+	max-width: 810px;
+	margin: 0 auto;
+	text-align: center;
+
+	.subheading {
+		color: map-get($map: $colors, $key: white80);
+		font-size: 2.2rem;
+	}
+}
+
+.cta-heading {
+	color: map-get($colors, white);
+	font-size: 4.8rem;
+	@include font(jost, sbold, weight);
+	line-height: 1.3;
+}
+
+
+
+.newslatter-form {
+	max-width: 540px;
+	margin: 4rem auto 14.2rem auto;
+	position: relative;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			&.gfield {
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+
+	input[type="text"] {
+		height: 60px;
+		@include border-radius(30px);
+		padding-right: 21rem;
+		margin: 0;
+		padding-left: 25px;
+	}
+
+	input[type="submit"] {
+		position: absolute;
+		right: 0;
+		height: 60px;
+		@include border-radius(0 30px 30px 0);
+		background-color: map-get($map: $colors, $key: tur);
+		@include font(jost, sbold, weight);
+		top: 0;
+
+		&:hover {
+			background-color: map-get($map: $colors, $key: apink);
+			color: map-get($map: $colors, $key: black);
+		}
+	}
+}
+
+.footer-widgets {
+	border: 1px solid map-get($map: $colors, $key: grayborder);
+	margin-bottom: 9rem;
+
+	.widget {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		border-right: 1px solid map-get($map: $colors, $key: grayborder);
+		padding: 5.8rem 11.7rem 5.5rem 10.1rem;
+
+		&:nth-child(2n+2) {
+			border-right: 0px;
+			padding-left: 10.9rem;
+		}
+
+		h4 {
+			color: map-get($map: $colors, $key: white);
+			margin-bottom: 2rem;
+		}
+
+		span {
+			display: block;
+			color: map-get($map: $colors, $key: white80);
+			margin-bottom: 5px;
+
+			a {
+				color: map-get($map: $colors, $key: white80);
+			}
+
+			strong {
+				@include font(jost, med, weight);
+				color: map-get($map: $colors, $key: white80);
+			}
+		}
+	}
+}
+
+.footer-gateway {
+	max-width: 780px;
+	width: 100%;
+	margin: 0 auto 6rem auto;
+
+	p {
+		font-size: 14px;
+		color: map-get($map: $colors, $key: white60);
+		line-height: 1.8;
+	}
+}
+
+.footer-socials {
+	margin-bottom: 5rem;
+
+	a {
+		display: inline-block;
+		border: 1px solid map-get($map: $colors, $key: white30);
+		@include border-radius(50%);
+		margin-right: 4px;
+		width: 52px;
+		height: 52px;
+		box-sizing: border-box;
+		padding-top: 12px;
+
+		&:hover {
+			border-color: map-get($map: $colors, $key: white);
+		}
+	}
+}
+
+.footer-menu {
+	text-align: center;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		ul {
+			display: none;
+		}
+
+		li {
+			margin-bottom: 0;
+			display: inline-block;
+			margin: 0 15px;
+
+			a {
+				color: map-get($map: $colors, $key: white40);
+				font-size: 14px;
+
+				&:hover {
+					color: map-get($map: $colors, $key: white80);
+				}
+			}
+		}
+	}
+}
+
+.copy-right {
+	color: map-get($map: $colors, $key: white40);
+	font-size: 14px;
+	line-height: 1.8;
+	margin-top: 3rem;
+
+	a {
+		color: map-get($map: $colors, $key: white40);
+
+		&:hover {
+			color: map-get($map: $colors, $key: white80);
+		}
+	}
+}

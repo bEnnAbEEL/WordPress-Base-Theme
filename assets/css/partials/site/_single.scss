@@ -1,0 +1,215 @@
+.post-container {
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.author-area {
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 30px;
+
+	.heading {
+		margin: 70px 0 25px;
+		text-align: center;
+		color: darken(map-get($colors, red), 4%);
+	}
+}
+
+.meta-single-post {
+	text-align: center;
+	@include font-size(1.6);
+
+	.post-meta a:hover {
+		color: #585858
+	}
+}
+
+.post-image {
+	margin: 0 0 40px;
+	text-align: center;
+	overflow: hidden;
+	@include transition(all, 0.5s, ease-in-out);
+}
+
+.post-content {
+	margin: 0 0 40px;
+	display: inline-block
+}
+
+.author-area {
+	padding-top: 10px
+}
+
+.related-blog-post {
+	float: left;
+	width: 48%;
+	margin-right: 3.75%
+}
+
+.related-posts .related-blog-post:nth-child(2n+2) {
+	margin-right: 0
+}
+
+.related-post-title a {
+	color: map-get($colors, black);
+	padding: 14px 0 10px;
+	line-height: 1.5;
+	display: inline-block;
+	@include font(mont, bold, family weight);
+	@include font-size(2.4);
+
+	a:hover {
+		color: map-get($colors, red);
+	}
+}
+
+#respond {
+	margin: 0 auto 80px
+}
+
+.author-area {
+	.author-image {
+		float: left;
+		width: 15%;
+		margin: 0;
+		text-align: center;
+
+		img {
+			width: 100%
+		}
+	}
+
+	.author-data {
+		float: right;
+		width: 83%;
+		margin: 0;
+		line-height: 1.65;
+	}
+
+	.author-name {
+		margin: 0 0 2px;
+		color: map-get($colors, black);
+		@include font-size(2.4);
+		line-height: 1.65;
+		@include font(mont, bold, family weight);
+	}
+}
+
+.section-title {
+	text-transform: uppercase;
+	@include font-size(3.6);
+	color: map-get($colors, red);
+	text-align: center;
+	border-bottom: 1px solid map-get($colors, grey);
+	margin: 70px auto 40px;
+	padding: 5px 0 15px
+}
+
+.post-tags,
+.post-tags a {
+	color: map-get($colors, red);
+	@include font-size(1.6);
+	padding: 0 4px
+}
+
+.fa-tag {
+	margin-right: 6px
+}
+
+.related-posts {
+	margin-top: 50px;
+
+	.post-meta {
+		margin-top: 0
+	}
+}
+
+.related-blog-post-content {
+	text-align: center
+}
+
+.post-shares {
+	margin-top: 30px;
+
+	a {
+		padding: 10px 0;
+		margin: 0
+	}
+
+	ul li {
+		float: left;
+		margin: 0 1.6% 0 0;
+		width: 23.8%
+	}
+
+	.fa {
+		margin: 0 12px
+	}
+}
+
+.post-shares ul li {
+
+	a,
+	a:visited {
+		display: block;
+		color: map-get($colors, white);
+		background-color: #f0f0f0;
+
+		a:hover {
+			color: map-get($colors, white);
+		}
+	}
+}
+
+.post-shares ul li a.facebook,
+.post-shares ul li a.facebook:visited {
+	background-color: #2f4b93
+}
+
+.post-shares ul li a.facebook:hover {
+	background-color: map-get($colors, pureblack);
+}
+
+.post-shares ul li a.twitter,
+.post-shares ul li a.twitter:visited {
+	background-color: #00bdef
+}
+
+.post-shares ul li a.twitter:hover {
+	background-color: map-get($colors, pureblack);
+}
+
+.post-shares ul li a.pinterest,
+.post-shares ul li a.pinterest:visited {
+	background-color: #df3535
+}
+
+.post-shares ul li a.pinterest:hover {
+	background-color: map-get($colors, pureblack);
+}
+
+.post-shares ul li a.linkedin,
+.post-shares ul li a.linkedin:visited {
+	background-color: #0072b5
+}
+
+.post-shares ul li a.linkedin:hover {
+	background-color: map-get($colors, pureblack);
+}
+
+.post-meta {
+	@include font-size(1.6);
+	color: map-get($colors, black);
+	margin-bottom: 40px;
+	font-weight: 400;
+	text-align: center
+}
+
+.post-meta a {
+	color: map-get($colors, red);
+
+	&:hover {
+		color: map-get($colors, black);
+	}
+}

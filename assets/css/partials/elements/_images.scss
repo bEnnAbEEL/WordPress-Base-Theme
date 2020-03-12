@@ -1,0 +1,29 @@
+.feature-image {
+	width: 126%;
+	margin: 7rem 0 5rem -13%;
+	text-align: center;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	@include border-radius(5px);
+}
+
+a {
+	img {
+		border: none;
+		outline: none;
+		margin-bottom: 0;
+	}
+}
+
+figure {
+	margin: 1.6rem 0;
+}
+
+figcaption {
+	@include font(jost, reg);
+	@include font-size(1.8);
+	margin: 0;
+}
